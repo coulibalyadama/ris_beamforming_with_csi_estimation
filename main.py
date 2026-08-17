@@ -14,8 +14,8 @@ SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from ml_model.experiment import default_experiment_config, run_experiment
-from ml_model.inference import get_powers, powerPilotNumber
+from src.ml_model.experiment import default_experiment_config, run_experiment
+from src.ml_model.inference import get_powers, powerPilotNumber
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Passive RIS channel estimation with a neural network")
